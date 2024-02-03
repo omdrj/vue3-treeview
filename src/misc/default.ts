@@ -47,6 +47,7 @@ export const defaultConfig: IConfiguration = {
     roots: [],
     padding: 16,
     editable: false,
+    rtl:false,
     editing: null,
     checkboxes: false,
     dragAndDrop: false,

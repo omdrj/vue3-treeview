@@ -10,6 +10,7 @@ export interface IConfiguration {
     leaves?: string[];
     padding?: number;
     editable?: boolean;
+    rtl?: boolean;
     editing?: string;
     editableClass?: string;
     checkboxes?: boolean;

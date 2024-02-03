@@ -64,11 +64,25 @@ export default function useLevel(props: {parentId: string; depth: number}): {} {
         return p >=0 ? p : 0;      
     });
 
+    const rtl = computed(() => {
+        if (isNil(config.value.rtl)) {
+            return defaultConfig.rtl;
+        }
+
+        return toInteger(config.value.rtl);
+    });
+
     const style = computed(() => {
-        return {
-            "padding-left": `${padding.value}px`,
-            "list-style": "none"
-        };
+        if(rtl)
+            return {
+                "padding-right": `${padding.value}px`,
+                "list-style": "none"
+            };
+        else
+            return {
+                "padding-left": `${padding.value}px`,
+                "list-style": "none"
+            };
     });
 
     return {
