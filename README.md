@@ -5,7 +5,7 @@
 ![Screenshot](./public/screenshot.png)
 
 Vue3 treeview is a treeview project.
-
+this fork add rtl suport in config. 
 [Documentation](https://n00ts.github.io/vue3-treeview)
 
 __Features:__
@@ -25,12 +25,12 @@ __Features:__
 - Drag and drop
 - Customizable style
 - Customizable icons
-
+- Support rtl as config
 ## Installation
 
 ```shell
-npm install vue3-treeview
-yarn add vue3-treeview
+npm install https://github.com/omdrj/vue3-treeview.git
+yarn add https://github.com/omdrj/vue3-treeview.git
 ```
 
 ## Play with repo
